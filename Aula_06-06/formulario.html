@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário html!</title>
+</head>
+<body>
+    <form action="inserindo.php" method="post" name = "Mural" id="Mural">
+        <table width="450" border="0" cellspacing="0" cellpadding="3">
+            <tr>
+                <td width="111"><div align="right">Nome:</div></td>
+                <td width="339"><input name="nome" type="text" id="nome" size="30"></td>
+            </tr>
+            <tr>
+                <td valign="top"><div align="right">Mensagem:</div></td>
+                <td><textarea bane="mensagem" cols="30" rows="10" id="mensagem"></textarea>/td>
+            </tr>
+            <tr>
+                <td height="29" colspan="2" valign="top">
+                    <div align="center">
+                        <input type="submit" name="Submit" value="Inserir no banco de dados">
+                    </div>
+                </td>
+            </tr>
+        </table>        
+    </form>
+</body>
+</html>
