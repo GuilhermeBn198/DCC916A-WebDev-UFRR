@@ -6,9 +6,9 @@ $username = 'root';
 /** Senha do usuário, no exemplo está em branco */
 $senha = '';
 /**Banco de dados desejado  */
-$banco = 'emac';
+ $banco = 'teste1';
 /** mysql_connect -- Abre uma conexão com o servidor MySQL */
-$db = mysql_connect($hostname, $username, $senha);
+$db = mysqli_connect($hostname, $username, $senha);
 /** mysql_select_db -- Seleciona um banco de dados MySQL */
-mysql_select_db($banco,$db);
+mysqli_select_db($banco,$db);
 ?>

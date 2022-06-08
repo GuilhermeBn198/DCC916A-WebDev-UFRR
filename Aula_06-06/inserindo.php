@@ -13,7 +13,16 @@
     $data = date('Y-m-d');
     /** Pegando a hora */
     $hora = strftime("%H:%M:%S");
+    
+    /** Inserindo tabela_mural os valores nos campos das variaveis */
+    $sqlinsert = "INSERT INTO tb_mural (id_mensagem, nome, mensagem, data, hora) VALUES ('', '$nome', '$mensagem', '$data', '$hora')";
 
-    /** Inserindo na tabela tb_mural, nos campos os valores das variaveis */
+    /** mysql_query -- Realiza uma query MySQL, executa o comando da variavel */
+    /** o comando die server pra caso aconteça algum erro(Mostra uma mensagem e termina o script atual) */
+    mysqli_query(\, $sqlinsert) or die ("Não foi possível inserir");
+
+    /** Exibe as informações se for inserido com sucesso */
+    echo "Nada data $data e na hora $hora<br>$nome disse:<br>$mensagem";
+    ?>
 </body>
 </html>
